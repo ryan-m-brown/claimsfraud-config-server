@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: claims-fraud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ryan-m-brown/remote-config
+          timeout: 10
+#          FOR SSH: https://goo.gl/jxZ4Dr
+#          ignoreLocalSshSettings: true
+#          privateKey: ${SSH_KEY}
+#          skipSslValidation: true
+server:
+  port: 8888
